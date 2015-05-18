@@ -1,5 +1,5 @@
 //
-//  costumer.h
+//  customer.h
 //  MovieStore
 //
 //  Created by Shen Li on 15/5/18.
@@ -7,39 +7,39 @@
 //------------------------------------------------------------------------------
 //
 
-#ifndef MovieStore_costumer_h
-#define MovieStore_costumer_h
+#ifndef MovieStore_customer_h
+#define MovieStore_customer_h
 
 #include "movie.h"
 #include <vector>
 
 
-class Costumer {
+class Customer {
 public:
-    Costumer(int, string);
-    bool setID(int)
+    Customer(int, string);
+    bool setID(int);
     int getID() const;
     bool setName(string);
     string getName() const;
     void showHistory() const;
     void addOnHold(Movie*);
     bool retrieveOnHold(Movie*);
-    bool operator <(const Costumer&) const;
-    bool operator >(const Costumer&) const;
-    bool operator ==(const Costumer&) const;
-    bool operator <=(const Costumer&) const;
-    bool operator >=(const Costumer&) const;
-    Costumer& operator =(const Costumer&);
+    bool operator <(const Customer&) const;
+    bool operator >(const Customer&) const;
+    bool operator ==(const Customer&) const;
+    bool operator <=(const Customer&) const;
+    bool operator >=(const Customer&) const;
+    Customer& operator =(const Customer&);
     
 private:
-    int costumerID;
-    string name;
-    vector movieHistroy;
-    Node* onHold;
     struct Node {
         Movie* movie;
         Node* next;
     };
+    int customerID;
+    string name;
+    vector<string> movieHistroy;
+    Node* onHold;
 };
 
 #endif

@@ -9,18 +9,33 @@
 #ifndef MovieStore_Header_h
 #define MovieStore_Header_h
 
-#include "costumer.h"
+#include "customer.h"
+#include <map>
 
 class MovieStore {
 public:
-    
+    MovieStore();
+    bool process(string);
+    bool borrowBook(string);
+    bool getCustomer(int, Customer*);
+    bool getMovie(string, Movie*);
+    bool getStock(Movie*);
+    bool returnBook(string);
+    bool addNewCustomer(string);
+    bool addNewMovie(string);
 private:
-    BSTree costumerList;
     struct BSTree {
         BSTree* left;
         BSTree* right;
-        Costumer* costumer;
+        Customer* customer;
     };
+    struct MovieNode {
+        char movieChar;
+        map<string, Movie*> movies;
+        MovieNode* next;
+    };
+    BSTree* customers;
+    MovieStore* movies;
 };
 
 #endif

@@ -9,14 +9,20 @@
 #ifndef __Lab4__comedy__
 #define __Lab4__comedy__
 
-#include <stdio.h>
 #include "movie.h"
+
 using  namespace std;
 class Comedy:public Movie{
     
 public:
     Comedy();
-    Comedy(string title,string director, int year);
+    Comedy(string title,string director, Date year);
+    bool operator <(const Movie&) const;
+    bool operator >(const Movie&) const;
+    bool operator ==(const Movie&) const;
+    bool operator <=(const Movie&) const;
+    bool operator >=(const Movie&) const;
+    
 protected:
     
 };

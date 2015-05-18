@@ -20,7 +20,9 @@ public:
     int getTotal()const;
     int getCurrent()const;
     bool outOfStock() const;
+    bool borrow();
     bool borrow(int number);
+    void add();
     void add(int number);
     
     

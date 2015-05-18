@@ -9,14 +9,18 @@
 #ifndef __Lab4__movie__
 #define __Lab4__movie__
 
-#include <stdio.h>
 #include <string>
 #include "mediaType.h"
 #include <map>
+#include "Date.h"
 using namespace std;
 class Movie{
 
 public:
+    Movie();
+    Movie(string, string, Date);
+    Movie(const Movie&);
+    
     virtual bool operator<(Movie& m)const;
     virtual bool operator<=(Movie& m)const;
     virtual bool operator>(Movie& m)const;

@@ -40,8 +40,9 @@
 		0A1D1B9D1B09D85E00617A09 /* movie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movie.cpp; sourceTree = "<group>"; };
 		0A1D1B9E1B09D85E00617A09 /* movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movie.h; sourceTree = "<group>"; };
 		0A1D1BA51B09D87D00617A09 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
-		0A1D1BAA1B09DC2B00617A09 /* movieStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movieStore.h; sourceTree = "<group>"; };
-		0A1D1BAB1B09DD8500617A09 /* costumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = costumer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		0A1D1BAB1B09DD8500617A09 /* customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		0AF9CC821B09E39B007882A8 /* movieStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movieStore.h; sourceTree = "<group>"; };
+		0AF9CC831B09EDB3007882A8 /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +90,9 @@
 				0A1D1B971B09D85E00617A09 /* comedy.h */,
 				0A1D1B991B09D85E00617A09 /* drama.h */,
 				0A1D1B9C1B09D85E00617A09 /* mediaType.h */,
-				0A1D1BAA1B09DC2B00617A09 /* movieStore.h */,
-				0A1D1BAB1B09DD8500617A09 /* costumer.h */,
+				0A1D1BAB1B09DD8500617A09 /* customer.h */,
+				0AF9CC821B09E39B007882A8 /* movieStore.h */,
+				0AF9CC831B09EDB3007882A8 /* Date.h */,
 			);
 			name = "H file";
 			sourceTree = "<group>";

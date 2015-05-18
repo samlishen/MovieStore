@@ -9,7 +9,6 @@
 #ifndef __Lab4__drama__
 #define __Lab4__drama__
 
-#include <stdio.h>
 #include "movie.h"
 using  namespace std;
 class Drama:public Movie{
@@ -17,6 +16,11 @@ class Drama:public Movie{
 public:
     Drama();
     Drama(string title,string director, int year);
+    bool operator <(const Movie&) const;
+    bool operator >(const Movie&) const;
+    bool operator ==(const Movie&) const;
+    bool operator <=(const Movie&) const;
+    bool operator >=(const Movie&) const;
 protected:
     
 };

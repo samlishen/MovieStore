@@ -9,15 +9,18 @@
 #ifndef __Lab4__classic__
 #define __Lab4__classic__
 
-#include <stdio.h>
 #include "movie.h"
 class Classic:public Movie{
 
 public:
     Classic();
-    Classic(string title,string director,int year,int month);
+    Classic(string title,string director,int year,Date month);
     int getMonth()const;
+    bool operator <(const Movie&) const;
+    bool operator >(const Movie&) const;
+    bool operator ==(const Movie&) const;
     bool operator <=(const Movie&) const;
+    bool operator >=(const Movie&) const;
     
 private:
     int month;
