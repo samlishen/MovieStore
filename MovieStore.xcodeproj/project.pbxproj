@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A1D1B8E1B09BB9300617A09 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D1B8D1B09BB9300617A09 /* main.cpp */; };
+		0A1D1B9F1B09D85E00617A09 /* classic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D1B941B09D85D00617A09 /* classic.cpp */; };
+		0A1D1BA01B09D85E00617A09 /* comedy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D1B961B09D85E00617A09 /* comedy.cpp */; };
+		0A1D1BA11B09D85E00617A09 /* drama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D1B981B09D85E00617A09 /* drama.cpp */; };
+		0A1D1BA31B09D85E00617A09 /* mediaType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D1B9B1B09D85E00617A09 /* mediaType.cpp */; };
+		0A1D1BA41B09D85E00617A09 /* movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D1B9D1B09D85E00617A09 /* movie.cpp */; };
+		0A1D1BA71B09D87D00617A09 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D1BA51B09D87D00617A09 /* Main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,17 @@
 
 /* Begin PBXFileReference section */
 		0A1D1B8A1B09BB9300617A09 /* MovieStore */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MovieStore; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A1D1B8D1B09BB9300617A09 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0A1D1B941B09D85D00617A09 /* classic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classic.cpp; sourceTree = "<group>"; };
+		0A1D1B951B09D85E00617A09 /* classic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classic.h; sourceTree = "<group>"; };
+		0A1D1B961B09D85E00617A09 /* comedy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = comedy.cpp; sourceTree = "<group>"; };
+		0A1D1B971B09D85E00617A09 /* comedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comedy.h; sourceTree = "<group>"; };
+		0A1D1B981B09D85E00617A09 /* drama.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drama.cpp; sourceTree = "<group>"; };
+		0A1D1B991B09D85E00617A09 /* drama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drama.h; sourceTree = "<group>"; };
+		0A1D1B9B1B09D85E00617A09 /* mediaType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mediaType.cpp; sourceTree = "<group>"; };
+		0A1D1B9C1B09D85E00617A09 /* mediaType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mediaType.h; sourceTree = "<group>"; };
+		0A1D1B9D1B09D85E00617A09 /* movie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movie.cpp; sourceTree = "<group>"; };
+		0A1D1B9E1B09D85E00617A09 /* movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movie.h; sourceTree = "<group>"; };
+		0A1D1BA51B09D87D00617A09 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +72,35 @@
 		0A1D1B8C1B09BB9300617A09 /* MovieStore */ = {
 			isa = PBXGroup;
 			children = (
-				0A1D1B8D1B09BB9300617A09 /* main.cpp */,
+				0A1D1BA51B09D87D00617A09 /* Main.cpp */,
+				0A1D1BA91B09D8B400617A09 /* CPP file */,
+				0A1D1BA81B09D89E00617A09 /* H file */,
 			);
 			path = MovieStore;
+			sourceTree = "<group>";
+		};
+		0A1D1BA81B09D89E00617A09 /* H file */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D1B951B09D85E00617A09 /* classic.h */,
+				0A1D1B971B09D85E00617A09 /* comedy.h */,
+				0A1D1B991B09D85E00617A09 /* drama.h */,
+				0A1D1B9C1B09D85E00617A09 /* mediaType.h */,
+				0A1D1B9E1B09D85E00617A09 /* movie.h */,
+			);
+			name = "H file";
+			sourceTree = "<group>";
+		};
+		0A1D1BA91B09D8B400617A09 /* CPP file */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D1B961B09D85E00617A09 /* comedy.cpp */,
+				0A1D1B941B09D85D00617A09 /* classic.cpp */,
+				0A1D1B981B09D85E00617A09 /* drama.cpp */,
+				0A1D1B9B1B09D85E00617A09 /* mediaType.cpp */,
+				0A1D1B9D1B09D85E00617A09 /* movie.cpp */,
+			);
+			name = "CPP file";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1D1B8E1B09BB9300617A09 /* main.cpp in Sources */,
+				0A1D1BA71B09D87D00617A09 /* Main.cpp in Sources */,
+				0A1D1BA31B09D85E00617A09 /* mediaType.cpp in Sources */,
+				0A1D1BA01B09D85E00617A09 /* comedy.cpp in Sources */,
+				0A1D1B9F1B09D85E00617A09 /* classic.cpp in Sources */,
+				0A1D1BA41B09D85E00617A09 /* movie.cpp in Sources */,
+				0A1D1BA11B09D85E00617A09 /* drama.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +281,7 @@
 				0A1D1B931B09BB9300617A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
