@@ -3,7 +3,7 @@
 //  Lab4
 //
 //  Created by Shih Kuo-Ting on 5/17/15.
-//  Copyright (c) 2015 Shih Kuo-Ting. All rights reserved.
+//  Copyright (c) 2015 Shih Kuo-Ting, Shen Li. All rights reserved.
 //------------------------------------------------------------------------------
 //
 
@@ -18,11 +18,13 @@ class Comedy : public Movie{
     friend ostream& operator >>(ostream&, const Movie&);
     
 public:
+    // Constructor & distructor
     Comedy();
     Comedy(string title,string director, int year);
     Comedy(const Comedy&);
     ~Comedy();
     
+    // Comparison operator override
     bool operator <(const Movie&) const;
     bool operator >(const Movie&) const;
     bool operator ==(const Movie&) const;

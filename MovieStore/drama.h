@@ -3,7 +3,7 @@
 //  Lab4
 //
 //  Created by Shih Kuo-Ting on 5/17/15.
-//  Copyright (c) 2015 Shih Kuo-Ting. All rights reserved.
+//  Copyright (c) 2015 Shih Kuo-Ting, Shen Li. All rights reserved.
 //------------------------------------------------------------------------------
 //
 
@@ -17,11 +17,13 @@ class Drama : public Movie{
     friend ostream& operator >>(ostream&, const Movie&);
     
 public:
+    // Constructor & destructor
     Drama();
     Drama(string title,string director, int year);
     Drama(const Drama&);
     ~Drama();
     
+    // Comparison override
     bool operator <(const Movie&) const;
     bool operator >(const Movie&) const;
     bool operator ==(const Movie&) const;

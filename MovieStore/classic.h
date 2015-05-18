@@ -3,7 +3,7 @@
 //  Lab4
 //
 //  Created by Shih Kuo-Ting on 5/17/15.
-//  Copyright (c) 2015 Shih Kuo-Ting. All rights reserved.
+//  Copyright (c) 2015 Shih Kuo-Ting, Shen Li. All rights reserved.
 //------------------------------------------------------------------------------
 //
 
@@ -17,17 +17,24 @@ class Classic : public Movie{
     friend ostream& operator >>(ostream&, const Movie&);
 
 public:
+    // Constructor & Destructor
     Classic();
     Classic(string title,string director,int year);
     Classic(const Classic&);
     ~Classic();
     
+    // Comparison operator override
     bool operator <(const Movie&) const;
     bool operator >(const Movie&) const;
     bool operator ==(const Movie&) const;
     bool operator <=(const Movie&) const;
     bool operator >=(const Movie&) const;
     
+    // Assignment operator override
+    Movie& operator = (const Movie&);
+    
+    string getActor() const;
+    bool setActore(string);
 private:
     string actor;
 };

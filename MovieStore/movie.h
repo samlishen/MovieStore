@@ -30,6 +30,9 @@ public:
     virtual bool operator==(Movie& m)const = 0;
     virtual bool operator>=(Movie& m)const = 0;
     
+    // Assignment operator override
+    virtual Movie& operator = (Movie& m);
+    
     // add(string, int): bool
     // Add new copies to media type
     // @para string: type of movie(DVD)
