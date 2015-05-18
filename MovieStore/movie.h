@@ -17,9 +17,6 @@ using namespace std;
 class Movie{
 
 public:
-
-    
-       
     virtual bool operator<(Movie& m)const;
     virtual bool operator<=(Movie& m)const;
     virtual bool operator>(Movie& m)const;

@@ -19,14 +19,16 @@ public:
     MediaType(string n,int number);
     int getTotal()const;
     int getCurrent()const;
+    bool outOfStock() const;
     bool borrow(int number);
     void add(int number);
     
     
 private:
-        int total;
-        int current;
-        string name;
+    int total;
+    int current;
+    string name;
+    MediaType* next;
     
 };
 #endif /* defined(__Lab4__mediaType__) */

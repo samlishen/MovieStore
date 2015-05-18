@@ -17,7 +17,7 @@ public:
     Classic();
     Classic(string title,string director,int year,int month);
     int getMonth()const;
-    
+    bool operator <=(const Movie&) const;
     
 private:
     int month;
