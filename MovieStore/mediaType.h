@@ -4,19 +4,23 @@
 //
 //  Created by Shih Kuo-Ting on 5/17/15.
 //  Copyright (c) 2015 Shih Kuo-Ting. All rights reserved.
+//------------------------------------------------------------------------------
 //
 
 #ifndef __Lab4__mediaType__
 #define __Lab4__mediaType__
 
-#include <stdio.h>
 #include <string>
 using namespace std;
 
 class MediaType{
     
 public:
+    MediaType();
     MediaType(string n,int number);
+    MediaType(const MediaType&);
+    ~MediaType();
+    
     int getTotal()const;
     int getCurrent()const;
     bool outOfStock() const;
