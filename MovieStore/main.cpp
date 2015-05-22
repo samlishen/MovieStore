@@ -1,30 +1,23 @@
 //
-//  Main.cpp
+//  main.cpp
 //  MovieStore
-//
-//  Created by Shen Li on 15/5/18.
-//  Copyright (c) 2015年 Shen Li. All rights reserved.
 //------------------------------------------------------------------------------
 //
+//  Created by Shen Li on 15/5/22.
+//  Copyright (c) 2015年 Shen Li. All rights reserved.
+//
 
-#include <iostream>
 #include <fstream>
-#include "movieStore.h"
+#include <iostream>
 using namespace std;
 
-
 int main() {
-    ifstream infile("");
-    if (!infile) {
-        cout << "File cannot be found" << endl;
-        return 1;
-    }
+    ifstream createMovie("data4movies.txt"), createCustomer("data4customers.txt"), instruction("data4commands.txt ");
     
-    MovieStore MOVIE;
-    
-    while (!infile.eof()) {
-        string processing;
-        getline(infile, processing);
-        MOVIE.process(processing);
+    if (!createMovie && !createCustomer && !instruction) {
+        MovieStore store(createMovie, createCustomer, instruction);
+        store.createDepository();
+        store.process();
     }
 }
+
