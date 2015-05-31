@@ -23,9 +23,9 @@ public:
     
     virtual void process() const = 0;
     virtual char getType() const = 0;
+    
 private:
     string original;
-    Customer* targetCustomer;
 };
 
 #endif /* defined(__MovieStore__instruction__) */

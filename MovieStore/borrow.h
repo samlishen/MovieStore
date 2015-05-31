@@ -9,19 +9,20 @@
 #ifndef __MovieStore__borrow__
 #define __MovieStore__borrow__
 
-#include "instruction.h"
+#include "command.h"
+#include "movie.h"
 
-class Borrow:Instruction {
+class Borrow: public Command {
 public:
     Borrow();
     Borrow(string);
-    ~Borrow();
+    virtual ~Borrow();
     
-    Instruction* create() const;
-    Instruction* create(string) const;
+    virtual Instruction* create() const;
+    virtual Instruction* create(string) const;
     
-    void process() const;
-    char getType() const;
+    virtual void process() const;
+    virtual char getType() const;
     
 private:
     Movie* movie;

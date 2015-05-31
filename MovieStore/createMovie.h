@@ -11,15 +11,19 @@
 
 #include "instruction.h"
 
-class CreateMovie:Instruction {
+class CreateMovie : Instruction {
 public:
     CreateMovie();
     CreateMovie(string);
     virtual ~CreateMovie();
     
+    virtual Instruction* create() const = 0;
+    virtual Instruction* create(string) const = 0;
     
+    virtual void process() const = 0;
+    virtual char getType() const = 0;
 private:
-    
+    Movie* movie;
 };
 
 #endif /* defined(__MovieStore__createMovie__) */
