@@ -15,16 +15,14 @@
 class Borrow: public Command {
 public:
     Borrow();
-    Borrow(string);
     virtual ~Borrow();
     
-    virtual Instruction* create() const;
-    virtual Instruction* create(string) const;
+    virtual Instruction* create(ifstream&) const;
     
     virtual void process() const;
     virtual char getType() const;
     
-private:
+protected:
     Movie* movie;
 };
 

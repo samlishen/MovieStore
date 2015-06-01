@@ -7,3 +7,7 @@
 //
 
 #include "comedy.h"
+
+Movie* Comedy:: create() const {
+    return new Comedy;
+}

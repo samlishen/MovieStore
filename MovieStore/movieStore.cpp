@@ -7,3 +7,15 @@
 //
 
 #include "movieStore.h"
+
+MovieStore:: MovieStore() {
+    for (int i = 0; i < 26; i++) {
+        movies[i] = NULL;
+    }
+}
+
+void MovieStore:: createMovieDepository(ifstream& infile) {
+    char movieCode;
+    infile >> movieCode;
+    
+}

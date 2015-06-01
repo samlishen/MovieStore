@@ -18,8 +18,7 @@ public:
     Return(string);
     virtual ~Return();
     
-    virtual Instruction* create() const;
-    virtual Instruction* create(string) const;
+    virtual Instruction* create(ifstream&) const;
     
     virtual void process() const;
     virtual char getType() const;

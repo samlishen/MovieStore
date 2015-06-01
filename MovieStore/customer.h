@@ -10,6 +10,10 @@
 #define __MovieStore__customer__
 
 #include "people.h"
+#include "movie.h"
+#include "command.h"
+#include <vector>
+using namespace std;
 
 class Customer : public People {
 public:
@@ -29,6 +33,8 @@ public:
     virtual People* createIt(string, string) const = 0;
 private:
     int ID;
+    LinkedList<Movie*, string> owned;
+    vector<Command*> history;
 };
 
 #endif /* defined(__MovieStore__customer__) */

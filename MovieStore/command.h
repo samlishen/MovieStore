@@ -15,10 +15,13 @@
 class Command: public Instruction {
 public:
     Command();
-    Command(string);
     virtual ~Command();
     
-private:
+    virtual Instruction* create(ifstream&) const = 0;
+    
+    virtual char getType() const = 0;
+    virtual void process() const = 0;
+protected:
     Customer* targetCustomer;
 };
 

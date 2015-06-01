@@ -10,20 +10,21 @@
 #define __MovieStore__createMovie__
 
 #include "instruction.h"
+#include "movieFactory.h"
+#include "movie.h"
 
-class CreateMovie : Instruction {
+class CreateMovie : public Instruction {
+    
 public:
     CreateMovie();
-    CreateMovie(string);
     virtual ~CreateMovie();
     
-    virtual Instruction* create() const = 0;
-    virtual Instruction* create(string) const = 0;
+    virtual Instruction* create(ifstream&) const = 0;
     
-    virtual void process() const = 0;
     virtual char getType() const = 0;
-private:
+protected:
     Movie* movie;
+    static MovieFactory movieFactory;
 };
 
 #endif /* defined(__MovieStore__createMovie__) */

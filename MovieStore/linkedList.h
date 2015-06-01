@@ -11,15 +11,15 @@
 
 #include "linkedList.h"
 
-template <class T>
+template <class T, class K>
 class LinkedList {
 public:
     LinkedList();
     ~LinkedList();
     
     bool insert(T*);
-    T* retrieve(T*);
-    bool remove(T*);
+    T* retrieve(K);
+    bool remove(K);
     void clear();
 private:
     struct Node {

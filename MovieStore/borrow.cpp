@@ -7,3 +7,8 @@
 //
 
 #include "borrow.h"
+
+Borrow:: Borrow() {
+    targetCustomer = NULL;
+    movie = NULL;
+}

@@ -15,16 +15,11 @@ using namespace std;
 class Instruction {
 public:
     Instruction();
-    Instruction(string);
     virtual ~Instruction();
     
-    virtual Instruction* create() const = 0;
-    virtual Instruction* create(string) const = 0;
+    virtual Instruction* create(ifstream&) const = 0;
     
-    virtual void process() const = 0;
-    virtual char getType() const = 0;
-    
-private:
+protected:
     string original;
 };
 

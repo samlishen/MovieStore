@@ -14,7 +14,6 @@
 class Classics : public Movie {
 public:
     Classics();
-    Classics(Director, string, int, int);
     virtual ~Classics();
     
     virtual bool operator < (const Movie&) const;
@@ -23,7 +22,11 @@ public:
     virtual bool operator >= (const Movie&) const;
     virtual bool operator > (const Movie&) const;
     
-    virtual Classics& operator = (const Classics&);
+    virtual Movie* create() const;
+    virtual Movie* create(Director, string, int, int) const;
+    
+private:
+    int month;
 };
 
 #endif /* defined(__MovieStore__classics__) */

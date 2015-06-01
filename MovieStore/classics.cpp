@@ -7,3 +7,11 @@
 //
 
 #include "classics.h"
+
+Classics:: Classics() {
+    
+}
+
+Movie* Classics:: create() const {
+    return new Classics;
+}

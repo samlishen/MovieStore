@@ -14,7 +14,6 @@
 class Comedy : public Movie {
 public:
     Comedy();
-    Comedy(Director, string, int);
     virtual ~Comedy();
     
     virtual bool operator < (const Movie&) const;
@@ -23,8 +22,7 @@ public:
     virtual bool operator >= (const Movie&) const;
     virtual bool operator > (const Movie&) const;
     
-private:
-    
+    virtual Movie* create() const;
 };
 
 #endif /* defined(__MovieStore__comedy__) */

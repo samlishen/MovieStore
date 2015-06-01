@@ -7,3 +7,7 @@
 //
 
 #include "drama.h"
+
+Movie* Drama:: create() const {
+    return new Drama;
+}

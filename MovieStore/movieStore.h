@@ -13,6 +13,8 @@
 #include <vector>
 #include "movie.h"
 #include "customer.h"
+#include "instructionFactory.h"
+#include "movieFactory.h"
 #include "BSTree.h"
 using namespace std;
 
@@ -24,11 +26,12 @@ public:
     void createCustomerDepository(ifstream&);
     void createInstructionDepository(ifstream&);
     void process();
+    bool validCode(char) const;
     
 private:
-    BSTree* movies[26];
+    BSTree<Movie*>* movies[26];
     BSTree<Customer*> customers;
-    
+    InstructionFactory instructionFactory;
 };
 
 #endif /* defined(__MovieStore__movieStore__) */

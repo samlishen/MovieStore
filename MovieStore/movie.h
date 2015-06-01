@@ -18,7 +18,6 @@ using namespace std;
 class Movie {
 public:
     Movie();
-    Movie(Director, string, int);
     virtual ~Movie();
     
     virtual int getStorage() const;
@@ -34,12 +33,19 @@ public:
     virtual bool operator >= (const Movie&) const = 0;
     virtual bool operator > (const Movie&) const = 0;
     
-    virtual Movie& operator = (const Movie&);
-private:
+    virtual bool setDirector(Director);
+    virtual bool setTitle(string);
+    virtual bool setYear(int);
+    virtual bool setMediaType(char, int);
+    
+    virtual bool addMediaType(char, int);
+    
+    virtual Movie* create() const = 0;
+protected:
     Director director;
     string title;
     int year;
-    LinkedList<MediaType> mediaType;
+    LinkedList<MediaType*> mediaType;
 };
 
 #endif /* defined(__MovieStore__movie__) */

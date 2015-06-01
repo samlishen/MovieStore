@@ -21,6 +21,8 @@ public:
     bool borrowType(int);
     bool returnType(int);
     
+    bool addTotle(int);
+    
 private:
     char type;
     int currentCopy;
