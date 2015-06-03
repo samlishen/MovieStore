@@ -9,12 +9,14 @@
 #include "movieFactory.h"
 
 MovieFactory:: MovieFactory() {
+    movies = new Movie*[SIZE];
     for (int i = 0; i < 26; i++) {
         movies[i] = NULL;
     }
     movies[2] = new Classics();
     movies[3] = new Drama();
     movies[5] = new Comedy();
+    a = new Classics;
 }
 
 MovieFactory:: ~MovieFactory() {

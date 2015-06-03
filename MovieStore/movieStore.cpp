@@ -15,7 +15,12 @@ MovieStore:: MovieStore() {
 }
 
 void MovieStore:: createMovieDepository(ifstream& infile) {
-    char movieCode;
-    infile >> movieCode;
-    
+    while (true) {
+        char movieCode;
+        infile >> movieCode;
+        if (infile.eof()) return;
+        Instruction* newInstruction =
+        instructionFactory.createIt(movieCode, infile);
+        newInstruction->
+    }
 }

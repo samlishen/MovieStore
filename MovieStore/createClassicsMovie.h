@@ -10,6 +10,7 @@
 #define __MovieStore__createClassicsMovie__
 
 #include "createMovie.h"
+#include <fstream>
 
 class CreateClassicsMovie : public CreateMovie {
 public:

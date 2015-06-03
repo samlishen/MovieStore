@@ -10,9 +10,10 @@
 #define __MovieStore__people__
 
 #include <string>
+#include <iostream>
 using namespace std;
 
-class People {
+class People { 
 public:
     People();
     People(string, string);
@@ -26,8 +27,7 @@ public:
     virtual bool operator >= (const People&) const;
     virtual bool operator > (const People&) const;
     
-    virtual People* createIt() const = 0;
-    virtual People* createIt(string, string) const = 0;
+    virtual People* create(ifstream&) const = 0;
 private:
     string firstName;
     string lastName;

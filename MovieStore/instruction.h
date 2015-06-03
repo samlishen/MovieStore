@@ -9,6 +9,7 @@
 #ifndef __MovieStore__instruction__
 #define __MovieStore__instruction__
 
+#include <iostream>
 #include <string>
 using namespace std;
 

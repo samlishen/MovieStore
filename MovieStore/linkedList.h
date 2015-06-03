@@ -17,8 +17,8 @@ public:
     LinkedList();
     ~LinkedList();
     
-    bool insert(T*);
-    T* retrieve(K);
+    bool insert(T&);
+    T& retrieve(K) const;
     bool remove(K);
     void clear();
 private:

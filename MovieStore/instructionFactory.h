@@ -16,7 +16,7 @@ public:
     InstructionFactory();
     ~InstructionFactory();
     
-    Instruction* createIt(char) const;
+    Instruction* createIt(char, ifstream&) const;
 protected:
     int tableSize = 26;
     Instruction** instructions;

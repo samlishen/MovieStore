@@ -13,6 +13,7 @@
 #include "director.h"
 #include "mediaType.h"
 #include "linkedList.h"
+#include <iostream>
 using namespace std;
 
 class Movie {
@@ -20,10 +21,8 @@ public:
     Movie();
     virtual ~Movie();
     
-    virtual int getStorage() const;
     virtual int getStorage(char) const;
-    virtual int isEnough(int) const;
-    virtual int isEnough(char, int) const;
+    virtual bool isEnough(char, int) const;
     virtual bool borrowMovie(char, int);
     virtual bool returnMovie(char, int);
     
@@ -45,7 +44,7 @@ protected:
     Director director;
     string title;
     int year;
-    LinkedList<MediaType*> mediaType;
+    LinkedList<MediaType*, char> mediaType;
 };
 
 #endif /* defined(__MovieStore__movie__) */

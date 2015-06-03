@@ -10,6 +10,7 @@
 #define __MovieStore__movieStore__
 
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include "movie.h"
 #include "customer.h"

@@ -27,8 +27,8 @@ InstructionFactory:: InstructionFactory() {
     instructions[17] = new Return;
 }
 
-Instruction* InstructionFactory:: createIt(char ch) const {
-    return instructions[hash(ch)]->create();
+Instruction* InstructionFactory:: createIt(char ch, ifstream& infile) const {
+    return instructions[hash(ch)]->create(infile);
 }
 
 int InstructionFactory:: hash(char ch) const {

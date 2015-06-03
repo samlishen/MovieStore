@@ -21,7 +21,9 @@ public:
     
     Movie* createIt(char) const;
 protected:
-    Movie* movies[26];
+    int const SIZE = 26;
+    Movie** movies;
+    Movie* a;
     int hash(char) const;
 };
 
