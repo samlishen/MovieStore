@@ -12,8 +12,6 @@
 		0A2B64801B1B720C00841A91 /* comedy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B647E1B1B720C00841A91 /* comedy.cpp */; };
 		0A2B64861B1B732100841A91 /* drama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B64841B1B732100841A91 /* drama.cpp */; };
 		0A2B64891B1B73D600841A91 /* classics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B64871B1B73D600841A91 /* classics.cpp */; };
-		0A2B648C1B1B74A500841A91 /* people.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B648A1B1B74A400841A91 /* people.cpp */; };
-		0A2B648F1B1B765C00841A91 /* director.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B648D1B1B765C00841A91 /* director.cpp */; };
 		0A2B64921B1B779500841A91 /* customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B64901B1B779500841A91 /* customer.cpp */; };
 		0A2B64951B1B797B00841A91 /* mediaType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B64931B1B797B00841A91 /* mediaType.cpp */; };
 		0A2B64981B1B7A7A00841A91 /* BSTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B64961B1B7A7A00841A91 /* BSTree.cpp */; };
@@ -58,10 +56,6 @@
 		0A2B64851B1B732100841A91 /* drama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drama.h; sourceTree = "<group>"; };
 		0A2B64871B1B73D600841A91 /* classics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classics.cpp; sourceTree = "<group>"; };
 		0A2B64881B1B73D600841A91 /* classics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classics.h; sourceTree = "<group>"; };
-		0A2B648A1B1B74A400841A91 /* people.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = people.cpp; sourceTree = "<group>"; };
-		0A2B648B1B1B74A500841A91 /* people.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = people.h; sourceTree = "<group>"; };
-		0A2B648D1B1B765C00841A91 /* director.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = director.cpp; sourceTree = "<group>"; };
-		0A2B648E1B1B765C00841A91 /* director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = director.h; sourceTree = "<group>"; };
 		0A2B64901B1B779500841A91 /* customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = customer.cpp; sourceTree = "<group>"; };
 		0A2B64911B1B779500841A91 /* customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; };
 		0A2B64931B1B797B00841A91 /* mediaType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mediaType.cpp; sourceTree = "<group>"; };
@@ -156,8 +150,6 @@
 				0A2B64851B1B732100841A91 /* drama.h */,
 				0A2B64881B1B73D600841A91 /* classics.h */,
 				0A2B64A31B1B9FF000841A91 /* movieFactory.h */,
-				0A2B648B1B1B74A500841A91 /* people.h */,
-				0A2B648E1B1B765C00841A91 /* director.h */,
 				0A2B64911B1B779500841A91 /* customer.h */,
 				0A2B64941B1B797B00841A91 /* mediaType.h */,
 				0A2B64971B1B7A7A00841A91 /* BSTree.h */,
@@ -186,8 +178,6 @@
 				0A2B64841B1B732100841A91 /* drama.cpp */,
 				0A2B64871B1B73D600841A91 /* classics.cpp */,
 				0A2B64A21B1B9FF000841A91 /* movieFactory.cpp */,
-				0A2B648A1B1B74A400841A91 /* people.cpp */,
-				0A2B648D1B1B765C00841A91 /* director.cpp */,
 				0A2B64901B1B779500841A91 /* customer.cpp */,
 				0A2B64931B1B797B00841A91 /* mediaType.cpp */,
 				0A2B64961B1B7A7A00841A91 /* BSTree.cpp */,
@@ -263,8 +253,6 @@
 				0AA2B9EC1B1AE37E000D9F27 /* movieStore.cpp in Sources */,
 				0A2B64AD1B1BB2F100841A91 /* createDramaMovie.cpp in Sources */,
 				0A9F1FC71B0F9437007D9816 /* main.cpp in Sources */,
-				0A2B648F1B1B765C00841A91 /* director.cpp in Sources */,
-				0A2B648C1B1B74A500841A91 /* people.cpp in Sources */,
 				0A2B647D1B1B6C4900841A91 /* movie.cpp in Sources */,
 				0A2B64861B1B732100841A91 /* drama.cpp in Sources */,
 				0A2B649E1B1B819E00841A91 /* queue.cpp in Sources */,

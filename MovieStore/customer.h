@@ -9,30 +9,27 @@
 #ifndef __MovieStore__customer__
 #define __MovieStore__customer__
 
-#include "people.h"
 #include "movie.h"
 #include "command.h"
 #include <vector>
 using namespace std;
 
-class Customer : public People {
+class Customer {
 public:
     Customer();
-    Customer(string, int, int);
+    Customer(string, int);
     virtual ~Customer();
     
     int getID() const;
+    string getName() const;
     
-    virtual bool operator < (const People&) const;
-    virtual bool operator <= (const People&) const;
-    virtual bool operator == (const People&) const;
-    virtual bool operator >= (const People&) const;
-    virtual bool operator > (const People&) const;
-    
-    virtual People* createIt() const = 0;
-    virtual People* createIt(string, string) const = 0;
+    bool operator == (const Customer&) const;
+
+    Customer* create() const = 0;
+    Customer* create(string, int) const = 0;
 private:
     int ID;
+    string name;
     LinkedList<Movie*, string> owned;
     vector<Command*> history;
 };

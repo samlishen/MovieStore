@@ -11,7 +11,7 @@
 
 #include "linkedList.h"
 
-template <class T>
+template <class T, class K>
 class Queue {
 public:
     Queue();
@@ -20,7 +20,7 @@ public:
     bool enqueue(T);
     T* dequeue();
 private:
-    LinkedList<T> queue;
+    LinkedList<T, K> queue;
     int size;
 };
 

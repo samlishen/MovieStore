@@ -13,7 +13,9 @@
 using namespace std;
 
 int main() {
-    ifstream createMovie("data4movies.txt"), createCustomer("data4customers.txt"), instruction("data4commands.txt ");
+    ifstream createMovie("data4movies.txt"),
+    createCustomer("data4customers.txt"),
+    instruction("data4commands.txt ");
     
     if (!createMovie && !createCustomer && !instruction) {
         MovieStore store;
