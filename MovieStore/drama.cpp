@@ -8,6 +8,6 @@
 
 #include "drama.h"
 
-Movie* Drama:: create() const {
+Movie* Drama:: create(ifstream& infile) const {
     return new Drama;
 }

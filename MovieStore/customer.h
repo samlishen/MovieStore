@@ -26,7 +26,6 @@ public:
     bool operator == (const Customer&) const;
 
     Customer* create() const = 0;
-    Customer* create(string, int) const = 0;
 private:
     int ID;
     string name;

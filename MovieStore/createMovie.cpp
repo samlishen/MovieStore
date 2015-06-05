@@ -7,3 +7,11 @@
 //
 
 #include "createMovie.h"
+
+CreateMovie:: CreateMovie() {
+    
+}
+
+CreateMovie:: ~CreateMovie() {
+    
+}

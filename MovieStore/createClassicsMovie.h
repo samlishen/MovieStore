@@ -10,6 +10,7 @@
 #define __MovieStore__createClassicsMovie__
 
 #include "createMovie.h"
+#include "classics.h"
 #include <fstream>
 
 class CreateClassicsMovie : public CreateMovie {
@@ -18,10 +19,8 @@ public:
     virtual ~CreateClassicsMovie();
     
     virtual Instruction* create(ifstream&) const;
-    
     virtual char getType() const;
-protected:
-    int typeIndex = getType() - 'a';
+    virtual bool process(BSTree<Movie*>*) const;
 };
 
 #endif /* defined(__MovieStore__createClassicsMovie__) */

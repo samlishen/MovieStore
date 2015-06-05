@@ -9,9 +9,16 @@
 #include "createClassicsMovie.h"
 
 Instruction* CreateClassicsMovie:: create(ifstream& infile) const {
+    Movie* newMovie = movieFactory.createIt(getType(), infile);
     CreateClassicsMovie* newInstruction = new CreateClassicsMovie;
-    Movie* newMovie = movieFactory.createIt(getType());
-    infile.get();
-    string reading;
-    getline(infile, <#basic_string<_CharT, _Traits, _Allocator> &__str#>, <#_CharT __dlm#>)
+    newInstruction->movie = newMovie;
+    return newInstruction;
+}
+
+bool CreateClassicsMovie:: process(BSTree<Movie*>* tree) const {
+    tree->insert(this->movie);
+}
+
+char CreateClassicsMovie:: getType() const {
+    return 'C';
 }

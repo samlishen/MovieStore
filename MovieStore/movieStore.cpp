@@ -9,6 +9,7 @@
 #include "movieStore.h"
 
 MovieStore:: MovieStore() {
+    movies = new BSTree<Movie*>*[MAXTYPE];
     for (int i = 0; i < 26; i++) {
         movies[i] = NULL;
     }
@@ -21,6 +22,7 @@ void MovieStore:: createMovieDepository(ifstream& infile) {
         if (infile.eof()) return;
         Instruction* newInstruction =
         instructionFactory.createIt(movieCode, infile);
-        newInstruction->
+        CreateMovie* newCreateMovie = static_cast<CreateMovie*>(newInstruction);
+        newCreateMovie->process(movies[newCreateMovie->getTypeIndex()]);
     }
 }

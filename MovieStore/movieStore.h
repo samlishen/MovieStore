@@ -15,7 +15,9 @@
 #include "movie.h"
 #include "customer.h"
 #include "instructionFactory.h"
+#include "createMovie.h"
 #include "movieFactory.h"
+#include "instruction.h"
 #include "BSTree.h"
 using namespace std;
 
@@ -30,9 +32,10 @@ public:
     bool validCode(char) const;
     
 private:
-    BSTree<Movie*>* movies[26];
+    const int MAXTYPE = 26;
+    BSTree<Movie*>** movies;
     BSTree<Customer*> customers;
-    InstructionFactory instructionFactory;
+    static InstructionFactory instructionFactory;
 };
 
 #endif /* defined(__MovieStore__movieStore__) */

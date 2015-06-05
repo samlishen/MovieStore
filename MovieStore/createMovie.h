@@ -10,6 +10,7 @@
 #define __MovieStore__createMovie__
 
 #include "instruction.h"
+#include "BSTree.h"
 #include "movieFactory.h"
 #include "movie.h"
 
@@ -22,6 +23,9 @@ public:
     virtual Instruction* create(ifstream&) const = 0;
     
     virtual char getType() const = 0;
+    virtual int getTypeIndex() const = 0;
+    
+    virtual bool process(BSTree<Movie*>*) = 0;
 protected:
     Movie* movie;
     static MovieFactory movieFactory;

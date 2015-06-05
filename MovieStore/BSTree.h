@@ -15,9 +15,9 @@ public:
     BSTree();
     ~BSTree();
     
-    bool insert(T*);
-    T* retrieve(T*);
-    bool remove(T*);
+    bool insert(T);
+    T retrieve(T);
+    bool remove(T);
     void clear();
     
 private:

@@ -9,11 +9,10 @@
 #ifndef __MovieStore__movie__
 #define __MovieStore__movie__
 
-#include <string>
-#include "director.h"
 #include "mediaType.h"
-#include "linkedList.h"
 #include <iostream>
+#include <string>
+#include <fstream>
 using namespace std;
 
 class Movie {
@@ -25,26 +24,22 @@ public:
     virtual bool isEnough(char, int) const;
     virtual bool borrowMovie(char, int);
     virtual bool returnMovie(char, int);
+    virtual bool setMediaType(char, int);
+    virtual bool addMediaType(char, int);
     
     virtual bool operator < (const Movie&) const = 0;
     virtual bool operator <= (const Movie&) const = 0;
     virtual bool operator == (const Movie&) const = 0;
     virtual bool operator >= (const Movie&) const = 0;
     virtual bool operator > (const Movie&) const = 0;
+    virtual char getType() const = 0;
+    virtual Movie* create(ifstream&) const = 0;
     
-    virtual bool setDirector(Director);
-    virtual bool setTitle(string);
-    virtual bool setYear(int);
-    virtual bool setMediaType(char, int);
-    
-    virtual bool addMediaType(char, int);
-    
-    virtual Movie* create() const = 0;
 protected:
-    Director director;
+    string director;
     string title;
     int year;
-    LinkedList<MediaType*, char> mediaType;
+    HashTable<MediaType> type;
 };
 
 #endif /* defined(__MovieStore__movie__) */

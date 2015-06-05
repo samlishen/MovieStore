@@ -22,10 +22,10 @@ public:
     virtual bool operator >= (const Movie&) const;
     virtual bool operator > (const Movie&) const;
     
-    virtual Movie* create() const;
-    virtual Movie* create(Director, string, int, int) const;
+    virtual Movie* create(ifstream&) const;
     
 private:
+    string actorFirstName, actorLastName;
     int month;
 };
 

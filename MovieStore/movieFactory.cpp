@@ -28,8 +28,8 @@ MovieFactory:: ~MovieFactory() {
     }
 }
 
-Movie* MovieFactory:: createIt(char ch) const {
-    return movies[hash(ch)]->create();
+Movie* MovieFactory:: createIt(char ch, ifstream& infile) const {
+    return movies[hash(ch)]->create(infile);
 }
 
 int MovieFactory:: hash(char ch) const {

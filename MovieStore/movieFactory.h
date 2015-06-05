@@ -13,13 +13,14 @@
 #include "comedy.h"
 #include "drama.h"
 #include "classics.h"
+#include <fstream>
 
 class MovieFactory {
 public:
     MovieFactory();
     ~MovieFactory();
     
-    Movie* createIt(char) const;
+    Movie* createIt(char, ifstream&) const;
 protected:
     int const SIZE = 26;
     Movie** movies;

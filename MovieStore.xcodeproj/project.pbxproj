@@ -63,9 +63,7 @@
 		0A2B64961B1B7A7A00841A91 /* BSTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BSTree.cpp; sourceTree = "<group>"; };
 		0A2B64971B1B7A7A00841A91 /* BSTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTree.h; sourceTree = "<group>"; };
 		0A2B64991B1B808400841A91 /* linkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linkedList.cpp; sourceTree = "<group>"; };
-		0A2B649A1B1B808400841A91 /* linkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linkedList.h; sourceTree = "<group>"; };
 		0A2B649C1B1B819E00841A91 /* queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = queue.cpp; sourceTree = "<group>"; };
-		0A2B649D1B1B819E00841A91 /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
 		0A2B64A21B1B9FF000841A91 /* movieFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movieFactory.cpp; sourceTree = "<group>"; };
 		0A2B64A31B1B9FF000841A91 /* movieFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movieFactory.h; sourceTree = "<group>"; };
 		0A2B64A51B1BAD7D00841A91 /* instructionFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = instructionFactory.cpp; sourceTree = "<group>"; };
@@ -153,8 +151,6 @@
 				0A2B64911B1B779500841A91 /* customer.h */,
 				0A2B64941B1B797B00841A91 /* mediaType.h */,
 				0A2B64971B1B7A7A00841A91 /* BSTree.h */,
-				0A2B649A1B1B808400841A91 /* linkedList.h */,
-				0A2B649D1B1B819E00841A91 /* queue.h */,
 			);
 			name = "H file";
 			sourceTree = "<group>";

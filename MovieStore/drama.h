@@ -22,8 +22,7 @@ public:
     virtual bool operator >= (const Movie&) const;
     virtual bool operator > (const Movie&) const;
     
-    virtual Movie* create() const;
-    virtual Movie* create(Director, string, int) const;
+    virtual Movie* create(ifstream&) const;
 };
 
 #endif /* defined(__MovieStore__drama__) */

@@ -48,6 +48,4 @@ bool Movie:: returnMovie(char type, int amount) {
     }
 }
 
-bool Movie:: setDirector(Director director) {
-    
-}
+bool Movie:: setMediaType(<#char#>, <#int#>)

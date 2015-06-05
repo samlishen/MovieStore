@@ -8,6 +8,7 @@
 
 #include "comedy.h"
 
-Movie* Comedy:: create() const {
-    return new Comedy;
+Movie* Comedy:: create(ifstream& infile) const {
+    Comedy* newMovie = new Comedy;
+    string 
 }

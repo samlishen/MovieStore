@@ -17,11 +17,7 @@ class Instruction {
 public:
     Instruction();
     virtual ~Instruction();
-    
     virtual Instruction* create(ifstream&) const = 0;
-    
-protected:
-    string original;
 };
 
 #endif /* defined(__MovieStore__instruction__) */
